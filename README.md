@@ -6,8 +6,9 @@ weight_list_first = []
 name_list = []
 diff_list = []
 count = 0
+TESTNO = 3
 
-for i in range(3):
+for i in range(TESTNO):
     name = input("Input name of student - ")
     name_list.append(name)
     weightA = float(input("Input weight of " + name + " (in kg) on the first day of the term - "))
@@ -26,7 +27,7 @@ for i in range(3):
 
 count = 0
 
-for k in range(3):
+for k in range(TESTNO):
     if diff_list[count] > 2.5:
         print(str(name_list[count]) + " has gained more that 2.5 kg.")
     elif diff_list[count] < -2.5:
